@@ -1,9 +1,9 @@
 @extends('layout')
 
 @section('content')
-    <Index></Index>
+    <Films></Films>
 @endsection
 
 @push('js')
-    <script src="/js/index.js"></script>
+    <script src="/js/films.js"></script>
 @endpush

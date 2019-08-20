@@ -5,16 +5,19 @@
                 dark
                 scroll-target="#app"
         >
-            <v-avatar :tile="true" width="65" class="floating">
-                <img src="/img/astronaut-white.png" alt="humanfly">
-            </v-avatar>
+            <a href="/">
+                <v-avatar :tile="true" width="65" class="floating" href="/">
+                    <img src="/img/astronaut-white.png" alt="humanfly">
+                </v-avatar>
+            </a>
 
-            <v-toolbar-title class="ml-2">Humanfly</v-toolbar-title>
+            <v-toolbar-title class="ml-2" href="/">Humanfly</v-toolbar-title>
 
             <v-spacer></v-spacer>
 
-            <v-btn icon>
-                <v-icon>info</v-icon>
+            <v-btn icon
+                   href="/films">
+                <v-icon>fas fa-film</v-icon>
             </v-btn>
 
             <v-btn icon>
@@ -22,7 +25,7 @@
             </v-btn>
 
             <v-btn icon>
-                <v-icon>search</v-icon>
+                <v-icon>info</v-icon>
             </v-btn>
         </v-app-bar>
     </div>
@@ -34,19 +37,3 @@
         }),
     }
 </script>
-
-<style>
-    .floating {
-        animation-name: floating;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-top: -10px;
-    }
-
-    @keyframes floating {
-        from { transform: translate(0,  0px); }
-        65%  { transform: translate(0, 10px); }
-        to   { transform: translate(0, -0px); }
-    }
-</style>

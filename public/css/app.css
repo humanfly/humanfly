@@ -10644,3 +10644,77 @@ a.text-dark:focus {
   }
 }
 
+.margin-navbar {
+  margin-top: 64px;
+}
+
+.light-grey {
+  color: #424242;
+}
+
+.film-card {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  height: 530px;
+}
+
+.film-card-poster {
+  min-height: 375px;
+}
+
+.film-card-content {
+  height: 100px;
+  overflow-y: hidden;
+}
+
+.no-image-holder {
+  font-family: "Glyphicons Regular";
+  text-align: center;
+  background-color: #dbdbdb;
+  color: #b5b5b5;
+  width: 500px;
+  height: 375px;
+  font-size: 150px;
+}
+
+.floating {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-top: -10px;
+}
+
+@-webkit-keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(0, 0px);
+  }
+}
+

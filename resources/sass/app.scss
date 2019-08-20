@@ -6,3 +6,51 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.margin-navbar {
+  margin-top: 64px;
+}
+
+.light-grey {
+  color: $light-grey;
+}
+
+.film-card {
+  display: inline-block;
+  margin: 10px;
+  width: 250px;
+  height: 530px;
+}
+
+.film-card-poster {
+  min-height: 375px;
+}
+
+.film-card-content {
+  height: 100px;
+  overflow-y:hidden;
+}
+
+.no-image-holder {
+  font-family: "Glyphicons Regular";
+  text-align: center;
+  background-color: #dbdbdb;
+  color: #b5b5b5;
+  width: 500px;
+  height: 375px;
+  font-size: 150px;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: -10px;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 10px); }
+  to   { transform: translate(0, -0px); }
+}

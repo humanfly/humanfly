@@ -22,8 +22,12 @@
         </nav>
     @show
 
-    <div id="app">
-        @yield('content')
+    <div id="app" class="margin-navbar">
+        <v-app>
+            <v-content>
+                @yield('content')
+            </v-content>
+        </v-app>
     </div>
 </div>
 

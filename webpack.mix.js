@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/index.js', 'public/js')
     .js('resources/js/navbar.js', 'public/js')
+    .js('resources/js/films.js', 'public/js')
     .extract([
         'vue', 'lodash', 'axios', 'vuetify',
     ], 'public/js/common')
